@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+}
+
+.bg {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kdQJKFiJ4mxhKVK6S6e7dMt7xlpoxqKA9Q&s');
+    background-size: cover;
+    height: 600px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adding transparency for better readability */
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    font-size: 1rem; /* Reduce font size */
+    font-weight: bold; 
+    color: white;
+}
+
+.bgColor {
+    transition: all 1s;
+    background-color: greenyellow;
+    color: black;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+/*        flex-direction: column; /* Stack nav items on mobile */*/
+        align-items: center;
+    }
+
+    li {
+        display: block;
+        padding: 10px;
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+
+    .bg {
+        height: 400px; /* Reduce the background height */
+    }
+
+    .bg-img img {
+        width: 100%;
+        height: auto; /* Ensure the image fits the screen */
+    }
+
+    .navbar {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
